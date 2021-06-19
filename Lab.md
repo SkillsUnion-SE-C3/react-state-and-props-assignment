@@ -4,15 +4,20 @@
 
 ## Brief
 
-You may continue working on your own code or use the updated code given in the `./todo-app` folder.
+Create a new app by using the following command in terminal/command prompt:
 
-1. Add a new component call `AddTask` that create a new task object and add it to the array (stored in the state) in `TodoContainer`.
+```
+npx create-react-app my-login-app
+```
 
-2. When an Add button is clicked in `AddTask` component, raise the event to `TodoContainer` so that a new task can be added to the array of tasks.
+Modify `App.js` by changing it's JSX with the following snippet:
 
-3. The count for total tasks should reflect the actual size of tasks array.
-
-Tips:
-
-- You can either try to use [useRef](https://reactjs.org/docs/hooks-reference.html#useref)
-- Or simply set a default value for `title` and `description` properties
+```js
+return (
+  <>
+    <input type="text" name="username" onChange={handleInputChange} />
+    <input type="password" name="pwd" onChange={handleInputChange} />
+    <button onClick={handleSubmit}>Login</button>
+  </>
+);
+```
