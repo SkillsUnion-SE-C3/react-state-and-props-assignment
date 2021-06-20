@@ -1,12 +1,25 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+/*
+  Brief
+
+  In this lab session, you need to work on the following tasks:
+  1. Define a state variable that stores user input - username & password.
+  2. Implement "handleInputChange" function to change the state.
+  3. When submit button is clicked, use window.alert() to show the value of the state.
+
+  Look out for "Add code here" for implementation.
+*/
+
 function App() {
-  // Create state to store username and password here. Hint: import {useState} from 'react';
+  // Add code here
+  // Task 1 - Create state to store username and password here. Hint: import {useState} from 'react';
 
   function handleInputChange(e) {
     // Add code here
     /*
+      Task 2:
       e.target.name will show either "username" or "pwd", 
       so you will know which input field it is handling currently.
      */
@@ -15,7 +28,7 @@ function App() {
 
   function handleSubmit() {
     // Add code here
-    // Use window.alert() function to show the value of username and password
+    // Task 3 - Use window.alert() function to show the value of username and password
   }
 
   return (
