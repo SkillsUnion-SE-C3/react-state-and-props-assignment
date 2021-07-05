@@ -1,54 +1,56 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import Image from "./Image";
 
 /*
   Brief
 
   In this lab session, you need to work on the following tasks:
   
-  1. Implement "handleInputChange" function to change the state declared as "inputInfo". 
-      - inputInfo should contain both username and password
-      - Example of inputInfo value: {username:"123@gmail.com", pwd:"Password@123"}
-  2. When submit button is clicked, use window.alert() to show the value of the state.
-
+  1. Implement "handleUsernameChange" function to change the state declared as "username".
+  2. Implement "handlePasswordChange" function to change the state declared as "password".
+  3. When submit button is clicked, use window.alert() to show the values of username and password states.
+  4. Have a look at Image.js file. As you can see it is expecting a prop for image url 
+     If you pass it corrctly from the App.js you should be able to see that image rendered on the page. 
   Look out for "Add code here" for implementation.
 */
 
 function App() {
-  const [inputInfo, setInputInfo] = useState({});
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  function handleInputChange(e) {
+  function handleUsernameChange(e) {
     // Add code here
-    /*
-      Task 1:
-      e.target.name will show either "username" or "pwd", 
-      so you will know which input field it is handling currently.
-     */
-    console.log(e.target.name);
+    console.log(e.target.value);
+  }
+
+  function handlePasswordChange(e) {
+    // Add code here
+    console.log(e.target.value);
   }
 
   function handleSubmit() {
     // Add code here
-    // Task 2 - Use window.alert() function to show the value of username and password
+    // Task 3 - Use window.alert() function to show the value of username and password
   }
 
   return (
-    <>
+    <div className="App">
+      <h1>Login</h1>
       <input
         type="text"
-        name="username"
         placeholder="username"
-        onChange={handleInputChange}
+        onChange={handleUsernameChange}
       />
       <input
         type="password"
-        name="pwd"
         placeholder="password"
-        onChange={handleInputChange}
+        onChange={handlePasswordChange}
       />
       <button onClick={handleSubmit}>Login</button>
-    </>
+      {/* Add code below for task 4 */}
+      <Image />
+    </div>
   );
 }
 
