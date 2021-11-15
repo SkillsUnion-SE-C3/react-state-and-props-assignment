@@ -9,7 +9,7 @@ You have approximately **45 minutes** to complete this lab.
 1. Fork and clone this repository
 2. Change into the new directory
 3. Create and checkout a new branch named `assignment`
-4. Run `npm install`
+4. Run `npm install` in my-login-app directory
 5. Follow the instructions provided in the [App.js](./my-login-app/src/App.js) file
 6. When you are done, commit, push to your fork and submit a pull request
 7. Make sure to submit your pull request before the allotted time
