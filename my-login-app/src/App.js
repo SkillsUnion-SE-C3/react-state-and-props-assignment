@@ -20,18 +20,15 @@ function App() {
   const [password, setPassword] = useState("");
 
   function handleUsernameChange(e) {
-    // Add code here
-    console.log(e.target.value);
+    setUsername(e.target.value);
   }
 
   function handlePasswordChange(e) {
-    // Add code here
-    console.log(e.target.value);
+    setPassword(e.target.value);
   }
 
-  function handleSubmit() {
-    // Add code here
-    // Task 3 - Use window.alert() function to show the value of username and password
+  function handleSubmit(e) {
+    alert(`Your username is: ${username} and your password is: ${password}`) 
   }
 
   return (
@@ -48,8 +45,7 @@ function App() {
         onChange={handlePasswordChange}
       />
       <button onClick={handleSubmit}>Login</button>
-      {/* Add code below for task 4 */}
-      <Image />
+      <Image imgUrl="https://thumbs.dreamstime.com/b/jack-irish-donkey-coming-over-to-say-hi-89606827.jpg" />
     </div>
   );
 }
