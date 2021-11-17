@@ -1,9 +1,9 @@
 import './Image.css'
 
 function Image(props) {
-  return(
+  return (
     <div>
-      {props.imgUrl ? <img src={props.imgUrl}/> :  "Property for showing image was not found"}
+      {props.imgUrl ? <img src={props.imgUrl} /> : "Property for showing image was not found"}
     </div>
   )
 }
