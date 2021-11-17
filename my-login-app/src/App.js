@@ -20,23 +20,26 @@ function App() {
   const [password, setPassword] = useState("");
 
   function handleUsernameChange(e) {
-    // Add code here
+    setUsername(e.target.value);
     console.log(e.target.value);
+    console.log(e);
   }
 
   function handlePasswordChange(e) {
-    // Add code here
+    setPassword(e.target.value);
     console.log(e.target.value);
   }
 
   function handleSubmit() {
-    // Add code here
+    alert(`${username}, ${password}`);
+    // window.alert("A name was submitted: " + e.target.value);
     // Task 3 - Use window.alert() function to show the value of username and password
   }
 
   return (
     <div className="App">
       <h1>Login</h1>
+      <p>{username}</p>
       <input
         type="text"
         placeholder="username"
@@ -48,8 +51,8 @@ function App() {
         onChange={handlePasswordChange}
       />
       <button onClick={handleSubmit}>Login</button>
-      {/* Add code below for task 4 */}
-      <Image />
+      {}
+      <Image imgUrl="https://picsum.photos/200/300" />
     </div>
   );
 }
