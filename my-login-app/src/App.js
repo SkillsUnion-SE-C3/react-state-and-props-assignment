@@ -21,14 +21,14 @@ function App() {
 
   function handleUsernameChange(e) {
     // Add code here
-  username={setUsername}
+  setUsername(e.target.value)
     }
     console.log(e.target.value);
   }
 
   function handlePasswordChange(e) {
     // Add code here
-    password={setPassword}
+    setPassword(e.target.value)
     console.log(e.target.value);
   }
 
@@ -53,7 +53,7 @@ function App() {
       />
       <button onClick={handleSubmit}>Login</button>
       {/* Add code below for task 4 */}
-      <Image />
+      <Image url="https://picsum.photos/200/300"/>
     </div>
   );
 }
