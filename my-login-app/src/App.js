@@ -21,17 +21,21 @@ function App() {
 
   function handleUsernameChange(e) {
     // Add code here
+  setUsername(e.target.value)
+    }
     console.log(e.target.value);
   }
 
   function handlePasswordChange(e) {
     // Add code here
+    setPassword(e.target.value)
     console.log(e.target.value);
   }
 
   function handleSubmit() {
     // Add code here
     // Task 3 - Use window.alert() function to show the value of username and password
+    window.alert({username}, {password})
   }
 
   return (
@@ -49,7 +53,7 @@ function App() {
       />
       <button onClick={handleSubmit}>Login</button>
       {/* Add code below for task 4 */}
-      <Image />
+      <Image url="https://picsum.photos/200/300"/>
     </div>
   );
 }
