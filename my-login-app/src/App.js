@@ -21,17 +21,21 @@ function App() {
 
   function handleUsernameChange(e) {
     // Add code here
+  username={setUsername}
+    }
     console.log(e.target.value);
   }
 
   function handlePasswordChange(e) {
     // Add code here
+    password={setPassword}
     console.log(e.target.value);
   }
 
   function handleSubmit() {
     // Add code here
     // Task 3 - Use window.alert() function to show the value of username and password
+    window.alert({username}, {password})
   }
 
   return (
